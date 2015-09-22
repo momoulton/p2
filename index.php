@@ -1,7 +1,7 @@
-<?php
-error_reporting(-1); # Report all PHP errors
-ini_set('display_errors', 1);
-?>
+<!-- <?php
+#error_reporting(-1); # Report all PHP errors
+#ini_set('display_errors', 1);
+?> -->
 
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ ini_set('display_errors', 1);
     echo $display[$i] . " ";
   }
   ?></h3>
-  <p><?php echo $error; ?></p>
+  <div id="error"><?php echo $error; ?></div>
 
   <form method="GET" action="index.php" >
     How many words? (1-9) <input type="text" name="words" maxlength="1">
