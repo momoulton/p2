@@ -9,7 +9,7 @@
   $digits = array('1', '2', '3', '4', '5', '6', '7', '8', '9');
   $specials = array('!', '@', '#', '$', '%', '?', '&', '*');
 
-  if (!empty($numwords) AND (!is_numeric($numwords) OR $numwords < 1 OR $numwords > 9)) {
+  if (!empty($numwords) AND (!is_numeric($numwords) OR $numwords < 0 OR $numwords > 9)) {
     $error = "Error: please enter a valid integer 1-9 for the number of words";
   }
   elseif (!empty($numdigits) AND (!is_numeric($numdigits) OR $numdigits < 0 OR $numdigits > 9)) {

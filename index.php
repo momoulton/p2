@@ -22,7 +22,7 @@
   <div id="error"><?php echo $error; ?></div>
   <br>
   <form method="GET" action="index.php" >
-    How many words? (1-9) <input type="text" name="words" maxlength="1">
+    How many words? (0-9) <input type="text" name="words" maxlength="1">
     <br><br>
     How many numbers? (0-9) <input type="text" name="nums" maxlength="1">
     <br><br>
