@@ -8,6 +8,7 @@
 
   $digits = array('1', '2', '3', '4', '5', '6', '7', '8', '9');
   $specials = array('!', '@', '#', '$', '%', '?', '&', '*');
+  $text = file('test.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
   if (!empty($numwords) AND (!is_numeric($numwords) OR $numwords < 1 OR $numwords > 9)) {
     $error = "Error: please enter a valid integer 1-9 for the number of words";
@@ -32,10 +33,12 @@
         array_push($display, $specials[$specchoice]);
       }
     }
+    if (!empty($numwords)) {
+      for ($i=0; $i < $numwords; $i++) {
+        $textchoice = rand(0,count($text)-1);
+        array_push($display, $text[$textchoice]);
+      }
+    }
     shuffle($display);
   }
-
-
-
-
  ?>
