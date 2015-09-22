@@ -7,7 +7,7 @@
 A password generator that follows the rules set out by the xkcd comic. It allows users to add up to 9 words, 9 digits, and 9 special characters to their passwords. The password generator draws its words one of four major novels, which the user can select. It generates the words randomly. The word lists are lists of the unique words appearing in each novel, trimmed slightly (numbers and a few very short words like 'a' removed).
 
 ## Demo
-TBD
+http://screencast.com/t/U65immIMpmoB
 
 ## Details for teaching team
 None.
