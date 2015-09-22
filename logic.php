@@ -8,7 +8,6 @@
 
   $digits = array('1', '2', '3', '4', '5', '6', '7', '8', '9');
   $specials = array('!', '@', '#', '$', '%', '?', '&', '*');
-  $text = file('test.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
   if (!empty($numwords) AND (!is_numeric($numwords) OR $numwords < 1 OR $numwords > 9)) {
     $error = "Error: please enter a valid integer 1-9 for the number of words";
@@ -21,6 +20,18 @@
   }
   else {
     $display = array();
+    if ($book = "Pride and Prejudice") {
+      $text = file('pride.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    }
+    elseif ($book = "Jane Eyre") {
+      $text = file('eyre.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    }
+    elseif ($book = "Great Expectations") {
+      $text = file('expectations.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    }
+    else {
+      $text = file('middlemarch.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    }
     if (!empty($numdigits)) {
       for ($i=0; $i < $numdigits; $i++) {
         $numchoice = rand(0,count($digits)-1);
