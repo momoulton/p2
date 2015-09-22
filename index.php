@@ -14,7 +14,7 @@
 
 <body>
   <h1>A Very Literary xkcd Password Generator</h1>
-  <p>The web comic xkcd proposed a method of generating passwords which are easy for people to remembers and hard for machines to guess. This app generates xkcd passwords for those with bookish sensibilities.</p>
+  <p>The web comic xkcd proposed a method of generating passwords which are easy for people to remember and hard for machines to guess. This app generates xkcd passwords for those with bookish sensibilities.</p>
   <h3><?php  for ($i = 0; $i < count($display); $i++) {
     echo $display[$i] . " ";
   }
