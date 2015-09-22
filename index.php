@@ -32,7 +32,7 @@
     <br>
     <input type="radio" name="book" value="Pride and Prejudice" checked>Pride and Prejudice (Austen)
     <br>
-    <input type="radio" name="book" value="Jane Eyre">Jane Eyre (Brontë)
+    <input type="radio" name="book" value="Jane Eyre">Jane Eyre (Bront&#xEB;)
     <br>
     <input type="radio" name="book" value="Middlemarch">Middlemarch (Eliot)
     <br>
