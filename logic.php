@@ -1,4 +1,5 @@
 <?php
+if (isset($_GET["book"])) {
   $numwords = $_GET['words'];
   $numdigits = $_GET['nums'];
   $numspecs = $_GET['specials'];
@@ -10,7 +11,7 @@
   $specials = array('!', '@', '#', '$', '%', '?', '&', '*');
 
   if (!empty($numwords) AND (!is_numeric($numwords) OR $numwords < 0 OR $numwords > 9)) {
-    $error = "Error: please enter a valid integer 1-9 for the number of words";
+    $error = "Error: please enter a valid integer 0-9 for the number of words";
   }
   elseif (!empty($numdigits) AND (!is_numeric($numdigits) OR $numdigits < 0 OR $numdigits > 9)) {
     $error= "Error: please enter a valid integer 0-9 for the number of numbers";
@@ -51,4 +52,5 @@
     }
     shuffle($display);
   }
+}
  ?>
