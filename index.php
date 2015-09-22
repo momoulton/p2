@@ -8,6 +8,7 @@ ini_set('display_errors', 1);
 <html>
 <head>
   <title>xkcd Passwords</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
   <?php require 'logic.php'; ?>
 </head>
 
@@ -22,11 +23,11 @@ ini_set('display_errors', 1);
 
   <form method="GET" action="index.php" >
     How many words? (1-9) <input type="text" name="words" maxlength="1">
-    <br>
+    <br><br>
     How many numbers? (0-9) <input type="text" name="nums" maxlength="1">
-    <br>
+    <br><br>
     How many special characters? (0-9) <input type="text" name="specials" maxlength="1">
-    <br>
+    <br><br>
     Which book?
     <br>
     <input type="radio" name="book" value="Pride and Prejudice" checked>Pride and Prejudice (Austen)
@@ -36,9 +37,10 @@ ini_set('display_errors', 1);
     <input type="radio" name="book" value="Middlemarch">Middlemarch (Eliot)
     <br>
     <input type="radio" name="book" value="Great Expectations">Great Expectations (Dickens)
-    <br>
+    <br><br>
     <input type='submit' value='Generate a password'>
   </form>
+  <br>
   <img src='images/password_strength.png' alt='xkcd cartoon on passwords'/>
 </body>
 
