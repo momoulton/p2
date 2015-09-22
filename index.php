@@ -20,7 +20,7 @@
   }
   ?></h3>
   <div id="error"><?php echo $error; ?></div>
-
+  <br>
   <form method="GET" action="index.php" >
     How many words? (1-9) <input type="text" name="words" maxlength="1">
     <br><br>

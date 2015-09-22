@@ -3,7 +3,7 @@
   $numdigits = $_GET['nums'];
   $numspecs = $_GET['specials'];
   $book = $_GET['book'];
-  $display = array("correct", "horse", "battery", "staple");
+  $display = array();
   $error = "";
 
   $digits = array('1', '2', '3', '4', '5', '6', '7', '8', '9');
@@ -19,7 +19,6 @@
     $error = "Error: please enter a valid integer 0-9 for the number of special characters";
   }
   else {
-    $display = array();
     if ($book = "Pride and Prejudice") {
       $text = file('pride.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     }
