@@ -8,6 +8,7 @@
 <html>
 <head>
   <title>xkcd Passwords</title>
+  <meta charset='utf-8'>
   <link rel="stylesheet" href="style.css" type="text/css">
   <?php require 'logic.php'; ?>
 </head>
